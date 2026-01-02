@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="article-title">Batroun Press - Article</title>
+    <link rel="shortcut icon" href="images/bp.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/article.css">
+</head>
+<body>
+
+    <!-- load page -->
+    <div id="loader" class="loader">
+        <img src="images/bp.jpg" alt="bp">
+    </div>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container top-bar-content">
+            <div class="date-display">
+                <span><i class="fas fa-calendar-alt"></i> Friday, March 15, 2024</span>
+                <span><i class="fas fa-clock"></i> 10:30 AM</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="container main-header">
+            <div class="logo">
+                <div class="logo-icon">
+                    <img src="images/bp.jpg" alt="bp" />
+                </div>
+                <div class="logo-text">
+                    <h1>Batroun<span>Press</span></h1>
+                    <p>الأخبار اليومية والشؤون الجارية</p>
+                </div>
+            </div>
+        </div>
+
+        <nav>
+            <div class="container navlinksmobile">
+                <ul class="nav-links">
+                    <li><a href="index.html"><i class="fas fa-newspaper"></i> آخر الأخبار</a></li>
+                    <li><a href="#"><i class="fas fa-city"></i> محلي</a></li>
+                    <li><a href="#"><i class="fas fa-globe"></i> عالمي</a></li>
+                    <li><a href="#"><i class="fas fa-chart-line"></i> أعمال</a></li>
+                    <li><a href="#"><i class="fas fa-futbol"></i> رياضة</a></li>
+                    <li><a href="#"><i class="fas fa-film"></i> ترفيه</a></li>
+                    <li><a href="#"><i class="fas fa-stethoscope"></i> صحة</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container" style="padding: 30px 20px;">
+        <a href="index.html" class="back-to-home">
+            <i class="fas fa-arrow-right"></i> العودة للرئيسية
+        </a>
+
+        <article class="article-full">
+            <div class="article-full-image">
+                <img id="article-image" src="" alt="">
+            </div>
+            <div class="article-full-content">
+                <div class="article-full-meta">
+                    <span class="article-full-category" id="article-category"></span>
+                    <span id="article-time"><i class="far fa-clock"></i></span>
+                </div>
+                <h1 class="article-full-title" id="article-title-display"></h1>
+                <div class="article-full-text" id="article-content">
+                    <!-- Article content will be loaded here -->
+                </div>
+
+                <div class="article-author">
+                    <div class="author-avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="author-info">
+                        <h4>مراسل بترون برس</h4>
+                        <p>صحفي متخصص في أخبار المنطقة والشؤون المحلية</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- Share Article -->
+        <div class="share-article">
+            <h4><i class="fas fa-share-alt"></i> شارك المقالة</h4>
+            <div class="share-buttons">
+                <a href="#" class="share-btn facebook" onclick="shareOnFacebook()">
+                    <i class="fab fa-facebook-f"></i> فيسبوك
+                </a>
+                <a href="#" class="share-btn twitter" onclick="shareOnTwitter()">
+                    <i class="fab fa-twitter"></i> تويتر
+                </a>
+                <a href="#" class="share-btn whatsapp" onclick="shareOnWhatsApp()">
+                    <i class="fab fa-whatsapp"></i> واتساب
+                </a>
+            </div>
+        </div>
+
+        <!-- Related Articles -->
+        <section class="related-articles">
+            <h3><i class="fas fa-newspaper"></i> مقالات ذات صلة</h3>
+            <div class="related-grid">
+                <div class="related-article">
+                    <div class="related-article-image">
+                        <img src="https://images.unsplash.com/photo-1588681664899-f142ff2dc9b1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1074&q=80" alt="">
+                    </div>
+                    <div class="related-article-content">
+                        <h4 class="related-article-title">تطورات جديدة في مشاريع البنية التحتية</h4>
+                        <div class="related-article-meta">
+                            <span>أخبار محلية</span> • <span>منذ يومين</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="related-article">
+                    <div class="related-article-image">
+                        <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80" alt="">
+                    </div>
+                    <div class="related-article-content">
+                        <h4 class="related-article-title">مبادرات الاستدامة البيئية في المنطقة</h4>
+                        <div class="related-article-meta">
+                            <span>بيئة</span> • <span>منذ 3 أيام</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="related-article">
+                    <div class="related-article-image">
+                        <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?ixlib=rb-4.0.3&auto=format&fit=crop&w=1169&q=80" alt="">
+                    </div>
+                    <div class="related-article-content">
+                        <h4 class="related-article-title">فعاليات ثقافية وفنية قادمة</h4>
+                        <div class="related-article-meta">
+                            <span>ثقافة</span> • <span>منذ أسبوع</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Batroun <span>Press</span></h3>
+                    <p>مصدر ثقتك للأخبار اليومية، الشؤون الجارية، وتحديثات المجتمع من بترون والمنطقة المحيطة.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h3>روابط سريعة</h3>
+                    <ul>
+                        <li><a href="#">من نحن</a></li>
+                        <li><a href="#">اتصل بنا</a></li>
+                        <li><a href="#">إعلانات</a></li>
+                        <li><a href="#">وظائف</a></li>
+                        <li><a href="#">سياسة الخصوصية</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>تصنيفات الأخبار</h3>
+                    <ul>
+                        <li><a href="#">أخبار محلية</a></li>
+                        <li><a href="#">سياسة</a></li>
+                        <li><a href="#">أعمال</a></li>
+                        <li><a href="#">رياضة</a></li>
+                        <li><a href="#">ثقافة</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>معلومات التواصل</h3>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> <span dir="ltr">+961 6 123 456</span></li>
+                        <li><i class="fas fa-envelope"></i> info@batrounpress.com</li>
+                        <li><i class="fas fa-clock"></i> الإثنين-الجمعة: 9ص-6م</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p dir="ltr">&copy; 2024 Batroun Press Channel. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/article.js"></script>
+</body>
+</html>
