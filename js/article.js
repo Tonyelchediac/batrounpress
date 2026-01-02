@@ -159,8 +159,9 @@ function shareOnTwitter() {
 }
 
 function shareOnWhatsApp() {
-    const url = encodeURIComponent(window.location.href);
-    const text = encodeURIComponent(document.getElementById('article-title-display').textContent + ' - Batroun Press\n' + url);
+    const url = window.location.href; // don't encode the URL itself
+    const title = document.getElementById('article-title-display').textContent;
+    const text = encodeURIComponent(title + ' - Batroun Press\n' + url);
     window.open(`https://wa.me/?text=${text}`, '_blank');
 }
 
