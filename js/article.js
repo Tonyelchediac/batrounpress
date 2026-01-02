@@ -159,8 +159,9 @@ function shareOnTwitter() {
 }
 
 function shareOnWhatsApp() {
-    const url = window.location.href; // don't encode the URL itself
+    const url = "https://tonyelchediac.github.io/batrounpress/article.html?id=1"; 
     const title = document.getElementById('article-title-display').textContent;
+    // نشفّر الرسالة كاملة (العنوان + الرابط الخام)
     const text = encodeURIComponent(title + ' - Batroun Press\n' + url);
     window.open(`https://wa.me/?text=${text}`, '_blank');
 }
